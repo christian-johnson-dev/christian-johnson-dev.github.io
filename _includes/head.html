@@ -1,0 +1,20 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="description"
+		content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}" />
+	<meta name="author" content="{{ site.author.name }}" />
+	<meta property="og:title" content="{{ page.title | default: site.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ page.url | absolute_url }}" />
+	<meta property="og:description" content="{{ page.description | default: site.description }}" />
+	<meta property="og:image" content="{{ '/path/to/your/image.jpg' | absolute_url }}" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+	<meta name="twitter:description" content="{{ page.description | default: site.description }}" />
+	<meta name="twitter:image" content="{{ '/path/to/your/image.jpg' | absolute_url }}" />
+	<title>{{ page.title | default: "Details" }} | {{ site.title }}</title>
+	<link rel="canonical" href="{{ page.url | absolute_url }}" />
+</head>
+
