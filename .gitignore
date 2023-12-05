@@ -1,5 +1,53 @@
-_site
-.sass-cache
-.jekyll-cache
+# Site output
+_site/
+
+# Gemfile lock file
+Gemfile.lock
+
+# Mac OS X specific files
+.DS_Store
+
+# Jekyll metadata file
 .jekyll-metadata
-vendor
+
+# Ruby specific
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+lib/bundler/man/
+.ruby-version
+.ruby-gemset
+
+# Environment normalization:
+/.env
+/.env.*.local
+/.env.local
+/.env.*.local
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node modules
+/node_modules
+
+# Ignore log files and databases
+/log/
+/tmp
+
+# Ignore other unneeded files
+.sass-cache/
+.jekyll-cache/
+.jekyll-test/
+
+# Exclude user-specific content
+*.sublime-workspace
+*.sublime-project
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Exclude sensitive data
+_secret/
+
